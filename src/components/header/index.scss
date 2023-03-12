@@ -1,0 +1,21 @@
+@use "../src/sass/variables.scss" as *;
+
+.header{
+    background-color: #E39F0B;
+    font-weight: 700;
+    color:white;
+    display: flex;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    .header__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
