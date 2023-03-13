@@ -5,17 +5,27 @@
     font-weight: 700;
     color:white;
     display: flex;
-    padding-left: 35px;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
 }
-    .header__logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .header__list{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-    }
+.header__leftSide{
+    display:flex;
+}
+.header__list{
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+.header__list li{
+    margin-left:30px;
+}
+.header__cart{
+    display:flex;
+    align-items: center;
+    margin-right:20px;
+}
