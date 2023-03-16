@@ -4,3 +4,29 @@
     margin:0px;
     font-family:RALEWAY;
 }
+
+@mixin display-flex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin button{
+    background-color:#E39F0B;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 31px;
+    padding-right: 31px;
+    border:none;
+    text-decoration: none;
+    margin-bottom:10px;
+    margin-top:10px;
+
+    border-radius: 8px;
+    cursor:pointer;
+}
+@mixin link{
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+}

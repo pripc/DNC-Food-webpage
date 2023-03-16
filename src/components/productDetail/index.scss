@@ -1,0 +1,70 @@
+@use '../../sass/variables.scss' as *;
+
+.orderSumary{
+    @include display-flex;
+    justify-content: center;
+    margin-top:3rem;
+    margin-left:20%;
+    width:60%;
+    height:30rem;
+    background-color: white;
+    border-radius: 50px;
+}
+.orderSumary-leftSide{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:1rem;
+    border: 1px #E39F0B;
+}
+
+.orderSumary-leftSide__card{
+    border: solid 1px #E39F0B;
+    border-radius:8px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:11px;
+    margin-bottom:25px;
+}
+.orderSumary-leftSide__card img{
+    border-radius:8px;
+    width:100%;
+    padding-bottom:11px;
+}
+.orderSumary-leftSide p{
+    text-align: center;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+.orderSumary-rightSide{
+    margin-left:20px;
+    margin-right:20px;
+}
+.orderSumary-rightSide__buyMore{
+    @include button;
+    font-size:20px;
+    color:white;
+    width:100%;
+    margin-top: 5rem;
+}
+.orderSumary-rightSide__buyMore a{
+    @include link
+}
+.orderSumary-rightSide__Finish{
+    @include button;
+    background-color: #676767;
+    font-size:20px;
+    color:white;
+    width:100%;
+}
+.orderSumary-rightSide h2{
+    color:#E39F0B;
+    font-size:30px;
+}
+.orderSumary-rightSide__foodName{
+    font-weight: 300;
+    font-size: 20px;
+}
+

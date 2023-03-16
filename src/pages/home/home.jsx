@@ -1,12 +1,18 @@
 import React from 'react';
+import { useParams } from 'react-router-dom'
+import { useState } from 'react'
 import Header from '../../components/header/header'
 import Cards from '../../components/card/card'
+import './index.scss';
 
-const home = () => {
+const home = ({data}) => {
   return (
-    <div>
+    <div className='home'>
       <Header />
-      <Cards />
+      <section className='home__cards'>
+        {data.map((food) => <Cards key={food.id} data={food}/> )}
+      </section>
+
     </div>
   )
 }

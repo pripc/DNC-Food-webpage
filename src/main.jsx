@@ -6,16 +6,17 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/home/home';
-import Product from './pages/productDetail/productDetail'
+import Product from './pages/product/product'
+import pratos from './mock/mock'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home data ={ pratos }/>,
   },
   {
-    path: "/products/:id",
-    element: <Product />,
+    path: "products/:id",
+    element: <Product data = { pratos }/>,
   },
 ]);
 

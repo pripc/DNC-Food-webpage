@@ -1,1 +1,34 @@
 @use "../src/sass/variables.scss" as *;
+
+.card{
+    border: solid #E39F0B 1px;
+    border-radius: 8px;
+    width:330px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-left:40px;
+    margin-top:25px;
+}
+.card__image{
+    width:330px;
+    height:251px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+.card__descripition{
+    font-weight: 400;
+    font-size: 14px;
+}
+.card__button{
+    @include button;
+    cursor:pointer;
+}
+.card__button a:hover{
+    cursor:pointer;
+    color:gray;
+}
+.card__button a{
+    @include link;
+}
